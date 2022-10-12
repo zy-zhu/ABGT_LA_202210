@@ -12,15 +12,23 @@
 <body>
 
     <div class="container">
-   
-    <model-viewer src="ABGT_01.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="0.97" shadow-softness="1" exposure="0.83" camera-orbit="-88.34deg 85.22deg auto">
+
+        <div>ABGT LA500 (PLACEHODER)</div>
+        <button class='btn' slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+    <model-viewer src="ABGT_01.glb" 
+    class="ar_container"
+    ar ar-modes="scene-viewer webxr quick-look" 
+    camera-controls poster="poster.webp" 
+    shadow-intensity="0.97" 
+    shadow-softness="1" exposure="0.83" 
+    camera-orbit="-88.34deg 85.22deg auto">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
-        <button slot="ar-button" id="ar-button">
-            View in your space
-        </button>
-        <div id="ar-prompt">
+  
+        <div id="ar-prompt" class="hand">
             <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
         </div>
     </model-viewer>

@@ -7,26 +7,34 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
-}
 
+}
 
 
 .btn{
     height: 5vh;
     align-items: center;
     text-align: center;
+    position: fixed;
+    z-index: 9999;
 }
 
-
+.ar_container{
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    z-index: 0;
+}
 
 
 @media screen and (max-width: 480px) {
     body {
-      background-color: blue;
+      background-color: transparent;
     }
 
     .hand{
         display: none;
+        opacity: 0;
     }
   }
 
