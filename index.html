@@ -1,49 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABGT500 Climate Machine</title>
+  <head>
+    <title>ABGT</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+
+    <button slot="ar-button" id="ar-button" >
+        View in your space
+    </button>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="a_01.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+     
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
-    </script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-    </script>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="ar.css">
-</head>
-</head>
-<body>
-
-    <div class="container">
-
-        <div class="title">ABGT LA500</div>
-        <button class='btn' slot="ar-button" id="ar-button">
-            View in your space
-        </button>
-    <model-viewer src="a_01.glb" 
-    class="ar_container"
-    ar 
-    ar-scale="fixed"
-    ar-modes="scene-viewer webxr quick-look" 
-    camera-controls 
-    shadow-intensity="0.97" 
-    shadow-softness="1" exposure="0.83" 
-    camera-orbit="88.34deg 85.22deg auto"
-    xr-environment
-    ios-src="a.usdz">
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-        </div>
-  
-        <div id="ar-prompt" class="hand">
-            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-        </div>
-    </model-viewer>
-
-    </div>
-
-    
-</body>
+  </body>
 </html>
