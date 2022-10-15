@@ -17,7 +17,7 @@
     <!-- <model-viewer> HTML element -->
     <model-viewer src="assets/ABGT1.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls shadow-intensity="1"
     poster="assets/ABGT1.webp" autoplay camera-orbit="-179.5deg 79.99deg auto" ar-scale="fixed" touch-action="pan-y" xr-environment 
-    ios-src="../../shared-assets/models/Astronaut.usdz" >
+    ios-src="assets/ABGT01.usdz" >
 
     <div class="background">
         <img src="img/bg.png"></div>
@@ -63,6 +63,7 @@
           const base = "assets/" + name;
           modelViewer.src = base + '.glb';
           modelViewer.poster = base + '.webp';
+          
           const slides = document.querySelectorAll(".slide");
           slides.forEach((element) => {element.classList.remove("selected");});
           element.classList.add("selected");
