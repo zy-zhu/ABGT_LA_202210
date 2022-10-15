@@ -3,7 +3,7 @@
 .title{
     /* color:#00B2FF; */
     color:white;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Inter', monospace;
     font-weight: 700;
     margin:5px;
@@ -18,7 +18,12 @@ font-weight: 300 !important ;
 
 .background{
     position: fixed;
-   height: 100vh;
+    height: 100vh;
     background-color: black;
     z-index: -99;
+}
+
+.logo-earth{
+    width: 8vw;
+    margin-top: 4px;
 }
