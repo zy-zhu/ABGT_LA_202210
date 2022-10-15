@@ -154,9 +154,11 @@ model-viewer > #ar-prompt > img {
     width: 100%;
     text-align: center;
     overflow: hidden;
+    align-items: center;
     position: absolute;
     bottom: 16px;
     z-index: 9999;
+    margin:auto;
   }
 
   .slides {
@@ -175,15 +177,16 @@ model-viewer > #ar-prompt > img {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #fff;
+    background-color: black;
     margin-right: 10px;
     border-radius: 10px;
+    border-color: white;
     border: none;
     display: flex;
   }
 
   .slide.selected {
-    border: 2px solid #4285f4;
+    border: 2px solid yellow;
   }
 
   .slide:focus {
