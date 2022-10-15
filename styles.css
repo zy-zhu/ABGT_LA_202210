@@ -158,7 +158,7 @@ model-viewer > #ar-prompt > img {
     position: absolute;
     bottom: 16px;
     z-index: 9999;
-    margin-bottom:30px;
+    margin-bottom:5vh;
   }
 
   .slides {
