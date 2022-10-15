@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.title{
+    /* color:#00B2FF; */
+    color:white;
+    font-size: 35px;
+    font-family: 'Inter', monospace;
+    font-weight: 700;
+    margin:5px;
+}
+
+.title_l{
+    font-family: 'Baskervville';
+font-style: italic;
+font-weight: 300 !important ;
+    
+}
+
+.background{
+    position: fixed;
+    height: 100%;
+    background-color: black;
+    z-index: -99;
+}
