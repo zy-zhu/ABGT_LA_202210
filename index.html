@@ -17,7 +17,7 @@
     <!-- <model-viewer> HTML element -->
     <model-viewer src="assets/ABGT1.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls shadow-intensity="1"
     poster="assets/ABGT1.webp" autoplay camera-orbit="-179.5deg 79.99deg auto" ar-scale="fixed"
-    ios-src="assets/ABGT01.usdz" >
+     >
 
     <div class="background">
         <img src="img/bg.png"></div>
@@ -67,7 +67,7 @@
           const base = "assets/" + name;
           modelViewer.src = base + '.glb';
           modelViewer.poster = base + '.webp';
-          modelViewer.ios = base + '.usdz';
+
           
           const slides = document.querySelectorAll(".slide");
           slides.forEach((element) => {element.classList.remove("selected");});
