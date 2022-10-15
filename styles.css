@@ -154,7 +154,7 @@ model-viewer > #ar-prompt > img {
     width: 100%;
     text-align: center;
     overflow: hidden;
-    align-items: center;
+    align-items: centers;
     position: absolute;
     bottom: 16px;
     z-index: 9999;
@@ -186,7 +186,7 @@ model-viewer > #ar-prompt > img {
   }
 
   .slide.selected {
-    border: 2px solid yellow;
+    border: 2px solid white;
   }
 
   .slide:focus {
