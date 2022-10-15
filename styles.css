@@ -10,11 +10,11 @@ body {
   background-color: black;
 }
 
-/* model-viewer {
+model-viewer {
   width: 100%;
   height: 90%;
 
-} */
+}
 
 
 .progress-bar {
@@ -107,8 +107,6 @@ model-viewer > #ar-prompt > img {
 }
 
 
-
-
   @keyframes circle {
     from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
     to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
@@ -146,6 +144,10 @@ model-viewer > #ar-prompt > img {
   model-viewer[ar-tracking="not-tracking"] > #ar-failure {
     display: block;
   }
+
+
+
+
 
   .slider {
     width: 100%;
